@@ -15,17 +15,12 @@
  */
 package com.example.lunchtray.model
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
 import com.example.lunchtray.data.DataSource
-import java.math.BigDecimal
 import java.text.NumberFormat
-import kotlin.text.Typography.times
-
-private const val TAG = "OrderViewModel"
 
 class OrderViewModel : ViewModel() {
 
@@ -73,6 +68,7 @@ class OrderViewModel : ViewModel() {
     init {
         resetOrder()
     }
+
     /**
      * Set the entree for the order.
      */
